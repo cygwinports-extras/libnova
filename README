@@ -1,0 +1,215 @@
+libnova
+-------------------------------------------
+libnova is a general purpose, double precision, celestial mechanics and
+astronomical calculation library.
+
+The intended audience of libnova is C / C++ programmers, astronomers and
+anyone else interested in calculating positions of astronomical objects 
+or celestial mechanics. libnova is the calculation engine used by the Nova
+project and most importantly, is free software.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+
+Build requirements:
+  cygwin-1.5.18-1
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  doxygen-1.4.4-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://libnova.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/libnova/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libnova-0.11.0-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./libnova-0.11.0-1.sh all
+
+This will create:
+  /usr/src/libnova-0.11.0-1.tar.bz2
+  /usr/src/libnova-0.11.0-1-src.tar.bz2
+  /usr/src/libnova-devel-0.11.0-1.tar.bz2
+  /usr/src/libnova-doc-0.11.0-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/cygnova-0-11-0.dll
+  /usr/share/doc/libnova-0.11.0/AUTHORS
+  /usr/share/doc/libnova-0.11.0/ChangeLog
+  /usr/share/doc/libnova-0.11.0/COPYING
+  /usr/share/doc/libnova-0.11.0/INSTALL
+  /usr/share/doc/libnova-0.11.0/NEWS
+  /usr/share/doc/libnova-0.11.0/README
+
+Files included in the devel package:
+
+  /usr/bin/libnovaconfig.exe
+  /usr/include/libnova/aberration.h
+  /usr/include/libnova/angular_separation.h
+  /usr/include/libnova/apparent_position.h
+  /usr/include/libnova/asteroid.h
+  /usr/include/libnova/comet.h
+  /usr/include/libnova/dynamical_time.h
+  /usr/include/libnova/earth.h
+  /usr/include/libnova/elliptic_motion.h
+  /usr/include/libnova/hyperbolic_motion.h
+  /usr/include/libnova/julian_day.h
+  /usr/include/libnova/jupiter.h
+  /usr/include/libnova/libnova.h
+  /usr/include/libnova/ln_types.h
+  /usr/include/libnova/lunar.h
+  /usr/include/libnova/mars.h
+  /usr/include/libnova/mercury.h
+  /usr/include/libnova/neptune.h
+  /usr/include/libnova/nutation.h
+  /usr/include/libnova/parabolic_motion.h
+  /usr/include/libnova/pluto.h
+  /usr/include/libnova/precession.h
+  /usr/include/libnova/proper_motion.h
+  /usr/include/libnova/refraction.h
+  /usr/include/libnova/rise_set.h
+  /usr/include/libnova/saturn.h
+  /usr/include/libnova/sidereal_time.h
+  /usr/include/libnova/solar.h
+  /usr/include/libnova/transform.h
+  /usr/include/libnova/uranus.h
+  /usr/include/libnova/utility.h
+  /usr/include/libnova/venus.h
+  /usr/include/libnova/vsop87.h
+  /usr/lib/libnova.a
+  /usr/lib/libnova.dll.a
+  /usr/lib/libnova.la
+
+Files included in the doc package:
+
+  /usr/share/doc/libnova-0.11.0/html/aberration_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/angular__separation_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/annotated.html
+  /usr/share/doc/libnova-0.11.0/html/apparent__position_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/asteroid_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/asteroid_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/comet_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/comet_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/dirs.html
+  /usr/share/doc/libnova-0.11.0/html/dir_000000.html
+  /usr/share/doc/libnova-0.11.0/html/dir_000001.html
+  /usr/share/doc/libnova-0.11.0/html/doxygen.css
+  /usr/share/doc/libnova-0.11.0/html/doxygen.png
+  /usr/share/doc/libnova-0.11.0/html/dynamical__time_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/earth_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/elliptic__motion_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/examples.html
+  /usr/share/doc/libnova-0.11.0/html/files.html
+  /usr/share/doc/libnova-0.11.0/html/functions.html
+  /usr/share/doc/libnova-0.11.0/html/functions_vars.html
+  /usr/share/doc/libnova-0.11.0/html/group__aberration.html
+  /usr/share/doc/libnova-0.11.0/html/group__angular.html
+  /usr/share/doc/libnova-0.11.0/html/group__apparent.html
+  /usr/share/doc/libnova-0.11.0/html/group__asteroid.html
+  /usr/share/doc/libnova-0.11.0/html/group__calendar.html
+  /usr/share/doc/libnova-0.11.0/html/group__comet.html
+  /usr/share/doc/libnova-0.11.0/html/group__conversion.html
+  /usr/share/doc/libnova-0.11.0/html/group__dynamical.html
+  /usr/share/doc/libnova-0.11.0/html/group__earth.html
+  /usr/share/doc/libnova-0.11.0/html/group__elliptic.html
+  /usr/share/doc/libnova-0.11.0/html/group__hyperbolic.html
+  /usr/share/doc/libnova-0.11.0/html/group__jupiter.html
+  /usr/share/doc/libnova-0.11.0/html/group__lunar.html
+  /usr/share/doc/libnova-0.11.0/html/group__mars.html
+  /usr/share/doc/libnova-0.11.0/html/group__mercury.html
+  /usr/share/doc/libnova-0.11.0/html/group__misc.html
+  /usr/share/doc/libnova-0.11.0/html/group__motion.html
+  /usr/share/doc/libnova-0.11.0/html/group__neptune.html
+  /usr/share/doc/libnova-0.11.0/html/group__nutation.html
+  /usr/share/doc/libnova-0.11.0/html/group__parabolic.html
+  /usr/share/doc/libnova-0.11.0/html/group__pluto.html
+  /usr/share/doc/libnova-0.11.0/html/group__precession.html
+  /usr/share/doc/libnova-0.11.0/html/group__refraction.html
+  /usr/share/doc/libnova-0.11.0/html/group__rst.html
+  /usr/share/doc/libnova-0.11.0/html/group__saturn.html
+  /usr/share/doc/libnova-0.11.0/html/group__sidereal.html
+  /usr/share/doc/libnova-0.11.0/html/group__solar.html
+  /usr/share/doc/libnova-0.11.0/html/group__transform.html
+  /usr/share/doc/libnova-0.11.0/html/group__uranus.html
+  /usr/share/doc/libnova-0.11.0/html/group__venus.html
+  /usr/share/doc/libnova-0.11.0/html/group__version.html
+  /usr/share/doc/libnova-0.11.0/html/group__VSOP87.html
+  /usr/share/doc/libnova-0.11.0/html/hyperbolic__motion_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/index.html
+  /usr/share/doc/libnova-0.11.0/html/julian__day_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/jupiter_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/libnova_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/ln__types_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/lunar_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/lunar_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/mars_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/mars_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/mercury_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/modules.html
+  /usr/share/doc/libnova-0.11.0/html/neptune_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/nutation_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/pages.html
+  /usr/share/doc/libnova-0.11.0/html/parabolic__motion_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/pluto_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/precession_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/proper__motion_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/refraction_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/rise__set_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/saturn_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/sidereal__time_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/solar_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/structlnh__equ__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structlnh__hrz__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structlnh__lnlat__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__date.html
+  /usr/share/doc/libnova-0.11.0/html/structln__dms.html
+  /usr/share/doc/libnova-0.11.0/html/structln__ell__orbit.html
+  /usr/share/doc/libnova-0.11.0/html/structln__equ__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__gal__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__helio__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__hms.html
+  /usr/share/doc/libnova-0.11.0/html/structln__hrz__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__hyp__orbit.html
+  /usr/share/doc/libnova-0.11.0/html/structln__lnlat__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__nutation.html
+  /usr/share/doc/libnova-0.11.0/html/structln__par__orbit.html
+  /usr/share/doc/libnova-0.11.0/html/structln__rect__posn.html
+  /usr/share/doc/libnova-0.11.0/html/structln__rst__time.html
+  /usr/share/doc/libnova-0.11.0/html/structln__zonedate.html
+  /usr/share/doc/libnova-0.11.0/html/sun_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/todo.html
+  /usr/share/doc/libnova-0.11.0/html/transforms_8c-example.html
+  /usr/share/doc/libnova-0.11.0/html/transform_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/uranus_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/utility_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/venus_8h-source.html
+  /usr/share/doc/libnova-0.11.0/html/vsop87_8h-source.html
+
+------------------
+
+Port Notes:
+
+----- version 0.11.0-1 -----
+Version bump.
+
+----- version 0.10.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

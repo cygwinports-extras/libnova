@@ -1,0 +1,11 @@
+category: Libs Devel
+requires: cygwin
+external-source: libnova
+sdesc: "Astronomical calculation library (development package)"
+ldesc: "libnova is a general purpose, double precision, celestial 
+mechanics and astronomical calculation library.
+
+The intended audience of libnova is C / C++ programmers, astronomers 
+and anyone else interested in calculating positions of astronomical objects 
+or celestial mechanics. libnova is the calculation engine used by the Nova
+project and most importantly, is free software."
