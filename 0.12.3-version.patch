@@ -1,0 +1,11 @@
+--- origsrc/libnova-0.12.3/src/libnova/libnova.h	2008-10-08 23:50:54.000000000 -0500
++++ src/libnova-0.12.3/src/libnova/libnova.h	2009-01-22 00:30:00.488875000 -0600
+@@ -16,7 +16,7 @@
+  *  Copyright (C) 2000 - 2005 Liam Girdwood  
+  */
+ 
+-#define LIBNOVA_VERSION "0.12.2"
++#define LIBNOVA_VERSION "0.12.3"
+ 
+ /*! \mainpage libnova
+ * \image html libnova-logo.jpg

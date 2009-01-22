@@ -1,0 +1,24 @@
+--- origsrc/libnova-0.12.3/src/Makefile.am	2007-10-11 08:23:43.000000000 -0500
++++ src/libnova-0.12.3/src/Makefile.am	2009-01-22 00:12:35.645125000 -0600
+@@ -2,6 +2,8 @@
+ 
+ SUBDIRS = libnova
+ 
++AM_CFLAGS = -DINSIDE_LIBNOVA
++
+ lib_LTLIBRARIES = libnova.la
+ 
+ libnova_la_SOURCES = \
+--- origsrc/libnova-0.12.3/src/libnova/ln_types.h	2009-01-13 17:28:51.000000000 -0600
++++ src/libnova-0.12.3/src/libnova/ln_types.h	2009-01-22 00:21:32.645125000 -0600
+@@ -24,9 +24,7 @@ extern "C" {
+ #endif
+ 
+ #if defined(_MSC_VER) || defined(__CYGWIN__) || defined(__MINGW32__) || defined( __BCPLUSPLUS__)  || defined( __MWERKS__)
+-#  if defined( LIBNOVA_STATIC )
+-#    define LIBNOVA_EXPORT
+-#  elif defined( LIBNOVA_SHARED )
++#  if defined( INSIDE_LIBNOVA )
+ #    define LIBNOVA_EXPORT   __declspec(dllexport)
+ #  else
+ #    define LIBNOVA_EXPORT   __declspec(dllimport)

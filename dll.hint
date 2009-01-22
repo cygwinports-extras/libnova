@@ -1,6 +1,7 @@
-category: Libs
+category: Science
 requires: cygwin
-sdesc: "Astronomical calculation library (runtime library)"
+external-source: libnova
+sdesc: "Astronomical calculation library (runtime)"
 ldesc: "libnova is a general purpose, double precision, celestial 
 mechanics and astronomical calculation library.
 

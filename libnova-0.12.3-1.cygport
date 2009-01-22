@@ -1,0 +1,22 @@
+DESCRIPTION="Celestial Mechanics, Astrometry and Astrodynamics Library"
+HOMEPAGE="http://libnova.sourceforge.net/"
+SRC_URI="mirror://sourceforge/libnova/${P}.tar.gz"
+PATCH_URI="
+	mirror://portage/sci-libs/${PN}/files/${PN}-0.12.1-configure.patch
+	0.12.3-dllexport.patch
+	0.12.3-long-double.patch
+	0.12.3-version.patch
+"
+
+PKG_NAMES="${PN} ${PN}${PV} ${PN}-devel"
+PKG_HINTS="src dll devel"
+declare ${PN}${PV//./_}_CONTENTS="usr/bin/cygnova-${PV//./-}.dll usr/share/doc/"
+libnova_devel_CONTENTS="usr/bin/libnovaconfig.exe usr/include/ usr/lib/"
+
+# Gentoo ebuild says that -O2 breaks lntest
+CFLAGS="${CFLAGS/O[2-9]/O1}"
+
+src_test() {
+	cd ${B}/lntest
+	./lntest.exe || true
+}

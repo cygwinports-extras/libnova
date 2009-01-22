@@ -1,6 +1,5 @@
-category: Doc
-external-source: libnova
-sdesc: "API documentation for libnova (API documentation)"
+category: Science
+sdesc: "Astronomical calculation library (sources)"
 ldesc: "libnova is a general purpose, double precision, celestial 
 mechanics and astronomical calculation library.
 

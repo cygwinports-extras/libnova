@@ -1,7 +1,7 @@
-category: Libs Devel
-requires: cygwin
+category: Science
+requires: cygwin libnova0.12.3
 external-source: libnova
-sdesc: "Astronomical calculation library (development package)"
+sdesc: "Astronomical calculation library (development)"
 ldesc: "libnova is a general purpose, double precision, celestial 
 mechanics and astronomical calculation library.
 

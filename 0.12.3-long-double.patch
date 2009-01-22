@@ -1,0 +1,18 @@
+--- origsrc/libnova-0.12.3/src/precession.c	2008-10-08 23:50:29.000000000 -0500
++++ src/libnova-0.12.3/src/precession.c	2009-01-22 00:28:10.582625000 -0600
+@@ -20,6 +20,15 @@
+ #include <libnova/precession.h>
+ #include <libnova/utility.h>
+ 
++#ifdef __CYGWIN__
++#define long
++#define acosl	acos
++#define asinl	asin
++#define atan2l	atan2
++#define cosl	cos
++#define sinl	sin
++#endif
++
+ /*
+ ** Precession
+ */
