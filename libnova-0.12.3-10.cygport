@@ -10,8 +10,8 @@ PATCH_URI="
 
 PKG_NAMES="${PN} ${PN}${PV} ${PN}-devel"
 PKG_HINTS="src dll devel"
-declare ${PN}${PV//./_}_CONTENTS="usr/bin/cygnova-${PV//./-}.dll usr/share/doc/"
-libnova_devel_CONTENTS="usr/bin/libnovaconfig.exe usr/include/ usr/lib/"
+declare libnova${PV//./_}_CONTENTS="usr/bin/cygnova-${PV//./-}.dll"
+libnova_devel_CONTENTS="usr/bin/libnovaconfig.exe usr/include/ usr/lib/ usr/share/doc/"
 
 # Gentoo ebuild says that -O2 breaks lntest
 CFLAGS="${CFLAGS/O[2-9]/O1}"
