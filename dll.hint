@@ -1,5 +1,5 @@
 category: Science
-requires: cygwin libgcc1
+requires: libgcc1
 external-source: libnova
 sdesc: "Astronomical calculation library (runtime)"
 ldesc: "libnova is a general purpose, double precision, celestial 

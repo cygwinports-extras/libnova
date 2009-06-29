@@ -1,5 +1,5 @@
 category: Science
-requires: cygwin libnova0.12.3
+requires: libnova0.12.3
 external-source: libnova
 sdesc: "Astronomical calculation library (development)"
 ldesc: "libnova is a general purpose, double precision, celestial 
